@@ -6,7 +6,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full bg-gray-800 text-white">
+    <header className="relative z-50 w-full bg-gray-800 text-white">
       <div className="p-4 flex items-center justify-between">
         <div className="text-lg font-semibold">
           <Link href="/">Suetone Carneiro</Link>
@@ -37,7 +37,7 @@ export function Navbar() {
           className={
             "md:flex items-center gap-4 " +
             (open
-              ? "block absolute right-4 top-[64px] mt-2 w-48 bg-gray-800 shadow md:static md:shadow-none md:w-auto"
+              ? "block absolute right-4 top-[64px] mt-2 w-48 bg-gray-800 shadow md:static md:shadow-none md:w-auto z-50"
               : "hidden md:block")
           }
           aria-hidden={!open}
