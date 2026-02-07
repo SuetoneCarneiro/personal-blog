@@ -49,7 +49,7 @@ export function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="/" onClick={() => setOpen(false)}>
+              <Link href="#projects" onClick={() => setOpen(false)}>
                 Projetos
               </Link>
             </li>
