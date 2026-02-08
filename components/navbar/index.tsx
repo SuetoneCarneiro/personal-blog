@@ -6,7 +6,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="relative z-50 w-full bg-gray-800 text-white">
+    <header className="sticky top-0 z-50 w-full bg-gray-800 text-white">
       <div className="p-4 flex items-center justify-between">
         <div className="text-lg font-semibold">
           <Link href="/">Suetone Carneiro</Link>
