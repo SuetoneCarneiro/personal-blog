@@ -69,24 +69,24 @@ export default function Home() {
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             
             <ProjectCard 
-              title="Projeto A"
-              description="Descrição A"
-              imageSrc="/window.svg"
-              projectUrl="#"
+              title="Sistema de Reconhecimento Facial com IA para aplicações médicas - Mondragon, Espanha."
+              description="Esse sistema foi desenvolvido em equipe na Universidade de Mondragon. A ideia é usar um modelo de Rede Neural Convolucional para reconhecimento facial e recuperação de informações médicas sobre paciêntes."
+              imageSrc="/img/projects/pbl-rescue.png"
+              projectUrl="https://youtu.be/jO17bMynIs0"
             />
 
             <ProjectCard 
-              title="Projeto B"
-              description="Descrição B"
-              imageSrc="/window.svg"
-              projectUrl="#"
+              title="Sistema de Gestão de Bibliotecas 'Genius Lab'."
+              description="Esse projeto me rendeu minha primeira vaga de estágio. Desenvolvido em Django com um banco de dados PostgreSQL, o projeto é um sistema de gestão de bibliotecas com funcionalidades de empréstimo, devolução, cadastro de livros e usuários e geração de relatórios."
+              imageSrc="/img/projects/genius-lab.png"
+              projectUrl="https://github.com/SuetoneCarneiro/Genius-Lab-biblioteca"
             />
 
             <ProjectCard 
-              title="Projeto C"
-              description="Descrição C"
-              imageSrc="/window.svg"
-              projectUrl="#"
+              title="Bingo! Divirta-se com seus amigos."
+              description="Fiz esse projeto mais pelo desafio técnico. Ele foi construído utilizando apenas JavaScript, HTML e CSS, sem frameworks. A ideia surgiu porque temos as cartelas de bingo em casa, mas não tinhamos nada para sortear e conseguir jogar com os amigos. É um projeto bem simples, mas funcional."
+              imageSrc="/img/projects/bingo.png"
+              projectUrl="https://github.com/SuetoneCarneiro/bingo"
             />
 
           </div>

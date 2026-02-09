@@ -35,7 +35,7 @@ export function ProjectCard({title, description, imageSrc, projectUrl}: ProjectC
           target="_blank"
           className="inline-flex items-center justify-center rounded-lg bg-gray-900 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-gray-700"
         >
-          View Project
+          Saiba mais
         </Link>
       </div>
     </div>
