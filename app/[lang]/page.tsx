@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getDictionary } from "@/lib/get-dictionary";
 import { ProjectCard } from "@/components/project-card/project-card";
 
-export default async function Home({ params, }: Readonly<{ params: Promise<{ lang: string }> }>) {
+export default async function Home({ params, }: Readonly<{ params: Promise<{ lang: 'en' | 'pt' }> }>) {
   const { lang } = await params;
   const dictionary = await getDictionary(lang);
 

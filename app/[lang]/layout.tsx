@@ -30,7 +30,7 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ lang: string }>;
+  params: Promise<{ lang: 'en' | 'pt' }>;
 }>) {
   const { lang } = await params;
   const dictionary = await getDictionary(lang);
@@ -39,7 +39,7 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar dict={dictionary} lang={lang} />
+        <Navbar dict={dictionary.nav} lang={lang} />
         <div className="flex-grow">
           {children}
         </div>

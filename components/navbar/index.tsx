@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 interface NavDict {
-  nav: any;
   home: string;
   projects: string;
   curriculum: string;
@@ -69,27 +68,27 @@ export function Navbar({ dict, lang }: Readonly<NavbarProps>) {
           <ul className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 p-4 md:p-0">
             <li>
               <Link href={`/${lang}`} onClick={() => setOpen(false)}>
-                {dict.nav.home}
+                {dict.home}
               </Link>
             </li>
             <li>
               <Link href="#projects" onClick={() => setOpen(false)}>
-                {dict.nav.projects}
+                {dict.projects}
               </Link>
             </li>
             <li>
               <Link href={`/${lang}/curriculo`} onClick={() => setOpen(false)}>
-                {dict.nav.curriculum}
+                {dict.curriculum}
               </Link>
             </li>
             <li>
               <Link href={`/${lang}/biblioteca`} onClick={() => setOpen(false)}>
-                {dict.nav.library}
+                {dict.library}
               </Link>
             </li>
             <li>
               <Link href={`/${lang}/blog`} onClick={() => setOpen(false)}>
-                {dict.nav.blog}
+                {dict.blog}
               </Link>
             </li>
             {/* --- Desktop Language Switcher (Dropdown) --- */}
