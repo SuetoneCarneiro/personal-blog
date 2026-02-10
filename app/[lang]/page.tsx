@@ -3,9 +3,9 @@ import Link from "next/link";
 import { getDictionary } from "@/lib/get-dictionary";
 import { ProjectCard } from "@/components/project-card/project-card";
 
-export default async function Home({ params, }: Readonly<{ params: Promise<{ lang: 'en' | 'pt' }> }>) {
+export default async function Home({ params, }: Readonly<{ params: Promise<{ lang: string }> }>) {
   const { lang } = await params;
-  const dictionary = await getDictionary(lang);
+  const dictionary = await getDictionary(lang as 'en' | 'pt');
 
   return (
     // Main container with min-height to center content vertically

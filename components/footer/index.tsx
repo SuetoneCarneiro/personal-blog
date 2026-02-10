@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { getDictionary } from "@/lib/get-dictionary";
 
-export async function Footer({lang}) {
+export async function Footer({lang}: Readonly<{lang: string}>) {
   const currentYear = new Date().getFullYear();
-  const dictionary = await getDictionary(lang);
+  const dictionary = await getDictionary(lang as "en" | "pt");
 
   return (
     <footer className="bg-gray-900 text-gray-300">
