@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Navbar } from '../components/navbar';
-import { Footer } from '../components/footer';
+import { Navbar } from '@/components/navbar';
+import { Footer } from '@/components/footer';
+import { getDictionary } from "@/lib/get-dictionary";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,21 +25,25 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ lang: string }>;
 }>) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
   return (
-    <html lang="en">
+    <html lang={lang}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
+        <Navbar dict={dictionary} lang={lang} />
         <div className="flex-grow">
           {children}
         </div>
-        <Footer />
+        <Footer lang={lang} />
       </body>
     </html>
   );

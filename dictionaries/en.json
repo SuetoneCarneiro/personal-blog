@@ -1,0 +1,36 @@
+{
+  "home": {
+    "role": "Software Developer",
+    "description": "Welcome to my website! I'm a lifelong learner and builder of software. Here you'll find my projects, curriculum, experiences, and much more. Feel free to explore and get in touch with me :)",
+    "cta": "Check my Curriculum",
+    "featured": "Featured Projects",
+    "featured_desc": "A selection of my recent work and experiments."
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "curriculum": "Curriculum",
+    "library": "Library",
+    "blog": "Blog"
+  },
+  "projects":{
+    "learn_more": "Learn more",
+    "card1":{
+        "title":"Facial Recognition System with AI for medical applications - Mondragon, Spain.",
+        "description":"This system was developed in a team at Mondragon University. The idea is to use a Convolutional Neural Network model for facial recognition and retrieval of medical information about patients."
+    },
+    "card2":{
+        "title":"Library Management System 'Genius Lab'.",
+        "description":"This project earned me my first internship. Developed in Django with a PostgreSQL database, the project is a library management system with features for borrowing, returning, registering books and users, and generating reports."
+    },
+    "card3":{
+        "title":"Bingo! Have fun with your friends.",
+        "description":"I did this project more for the technical challenge. It was built using only JavaScript, HTML, and CSS, without frameworks. The idea came up because we have bingo cards at home, but we didn't have anything to draw and play with friends. It's a very simple but functional project."
+    }
+  },
+  "work_in_progress": {
+    "title": "Oops! Page under construction.",
+    "description": "This page is still under construction. Our best cat engineers are working on it!",
+    "cta": "Return to homepage"
+  }
+}

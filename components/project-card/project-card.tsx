@@ -6,9 +6,10 @@ interface ProjectCardProps {
   readonly description: string;
   readonly imageSrc: string;
   readonly projectUrl: string;
+  readonly btnText?: string;
 }
 
-export function ProjectCard({title, description, imageSrc, projectUrl}: ProjectCardProps) {
+export function ProjectCard({title, description, imageSrc, projectUrl, btnText}: ProjectCardProps) {
     return(
     <div className="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
       <div className="relative h-48 w-full overflow-hidden bg-gray-100">
@@ -35,7 +36,7 @@ export function ProjectCard({title, description, imageSrc, projectUrl}: ProjectC
           target="_blank"
           className="inline-flex items-center justify-center rounded-lg bg-gray-900 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-gray-700"
         >
-          Saiba mais
+          {btnText}
         </Link>
       </div>
     </div>

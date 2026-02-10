@@ -2,17 +2,21 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface WorkInProgressProps {
-  readonly title?: string;
+  readonly title: string;
   readonly description?: string;
+  readonly buttonText?: string;
   readonly imageSrc?: string;
   readonly showBackButton?: boolean;
+  readonly backLink?: string;
 }
 
 export function WorkInProgress({
   title,
-  description = "Esta página ainda está em construção. Nossos melhores gatos engenheiros estão trabalhando nisso!",
+  description,
+  buttonText,
   imageSrc = "/juanito-wip.png",
   showBackButton = true,
+  backLink = "/"
 }: WorkInProgressProps) {
   return (
     <div className="flex min-h-[60vh] flex-col items-center justify-center px-4 text-center">
@@ -39,10 +43,10 @@ export function WorkInProgress({
       {/* Optional Back Button */}
       {showBackButton && (
         <Link
-          href="/"
+          href={backLink}
           className="rounded-lg bg-gray-900 px-6 py-3 text-base font-semibold text-white transition-transform hover:scale-105 hover:bg-gray-700"
         >
-          Retornar à página inicial
+          {buttonText}
         </Link>
       )}
     </div>

@@ -1,8 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getDictionary } from "@/lib/get-dictionary";
 import { ProjectCard } from "@/components/project-card/project-card";
 
-export default function Home() {
+export default async function Home({ params, }: Readonly<{ params: Promise<{ lang: string }> }>) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
+
   return (
     // Main container with min-height to center content vertically
     <main className="flex min-h-screen flex-col">
@@ -18,21 +22,19 @@ export default function Home() {
             </h1>
             
             <span className="mb-6 text-sm font-bold uppercase tracking-widest text-gray-800">
-              Software Developer
+              {dictionary.home.role}
             </span>
 
             <p className="mb-8 max-w-lg text-lg leading-relaxed text-gray-600">
-              Bem vindo ao meu website! Sou um eterno aprendiz e construtor de software. 
-              Aqui você encontra meus <Link href="#projects" className="text-blue-800 underline">projetos</Link>, <Link href="/curriculo" className="text-blue-800 underline">currículo</Link>, experiências e muito mais. 
-              Fique à vontade para explorar e entrar em contato comigo :)
+              {dictionary.home.description}
             </p>
             
             {/* CTA Button */}
             <Link
-              href="/curriculo"
+              href={`/${lang}/curriculo`}
               className="rounded-lg bg-slate-900 px-8 py-4 text-base font-semibold text-white transition-all hover:bg-slate-600 hover:shadow-lg"
             >
-              Acessar Currículo
+              {dictionary.home.cta}
             </Link>
           </div>
 
@@ -58,10 +60,10 @@ export default function Home() {
           {/* Section Header */}
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Projetos Desenvolvidos
+              {dictionary.home.featured}
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Uma seleção dos meus trabalhos e experimentos recentes.
+              {dictionary.home.featured_desc}
             </p>
           </div>
 
@@ -69,24 +71,27 @@ export default function Home() {
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             
             <ProjectCard 
-              title="Sistema de Reconhecimento Facial com IA para aplicações médicas - Mondragon, Espanha."
-              description="Esse sistema foi desenvolvido em equipe na Universidade de Mondragon. A ideia é usar um modelo de Rede Neural Convolucional para reconhecimento facial e recuperação de informações médicas sobre paciêntes."
+              title={dictionary.projects.card1.title}
+              description={dictionary.projects.card1.description}
               imageSrc="/img/projects/pbl-rescue.png"
               projectUrl="https://youtu.be/jO17bMynIs0"
+              btnText={dictionary.projects.learn_more}
             />
 
             <ProjectCard 
-              title="Sistema de Gestão de Bibliotecas 'Genius Lab'."
-              description="Esse projeto me rendeu minha primeira vaga de estágio. Desenvolvido em Django com um banco de dados PostgreSQL, o projeto é um sistema de gestão de bibliotecas com funcionalidades de empréstimo, devolução, cadastro de livros e usuários e geração de relatórios."
+              title={dictionary.projects.card2.title}
+              description={dictionary.projects.card2.description}
               imageSrc="/img/projects/genius-lab.png"
               projectUrl="https://github.com/SuetoneCarneiro/Genius-Lab-biblioteca"
+              btnText={dictionary.projects.learn_more}
             />
 
             <ProjectCard 
-              title="Bingo! Divirta-se com seus amigos."
-              description="Fiz esse projeto mais pelo desafio técnico. Ele foi construído utilizando apenas JavaScript, HTML e CSS, sem frameworks. A ideia surgiu porque temos as cartelas de bingo em casa, mas não tinhamos nada para sortear e conseguir jogar com os amigos. É um projeto bem simples, mas funcional."
+              title={dictionary.projects.card3.title}
+              description={dictionary.projects.card3.description}
               imageSrc="/img/projects/bingo.png"
               projectUrl="https://github.com/SuetoneCarneiro/bingo"
+              btnText={dictionary.projects.learn_more}
             />
 
           </div>
