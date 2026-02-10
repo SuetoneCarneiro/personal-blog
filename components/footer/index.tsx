@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { getDictionary } from "@/lib/get-dictionary";
 
-export function Footer() {
+export async function Footer({lang}: Readonly<{lang: string}>) {
   const currentYear = new Date().getFullYear();
+  const dictionary = await getDictionary(lang as "en" | "pt");
 
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -45,16 +47,16 @@ export function Footer() {
           {/* Section 2: navigation links */}
           <div className="flex flex-wrap justify-center gap-8 font-medium">
             <Link href="/#projects" className="transition-colors hover:text-white">
-              Projetos
+              {dictionary.nav.projects}
             </Link>
-            <Link href="/curriculo" className="transition-colors hover:text-white">
-              Currículo
+            <Link href={`/${lang}/curriculo`} className="transition-colors hover:text-white">
+              {dictionary.nav.curriculum}
             </Link>
-            <Link href="/biblioteca" className="transition-colors hover:text-white">
-              Biblioteca
+            <Link href={`/${lang}/biblioteca`} className="transition-colors hover:text-white">
+              {dictionary.nav.library}
             </Link>
-            <Link href="/blog" className="transition-colors hover:text-white">
-              Blog
+            <Link href={`/${lang}/blog`} className="transition-colors hover:text-white">
+              {dictionary.nav.blog}
             </Link>
           </div>
 
