@@ -32,5 +32,117 @@
     "title": "Ops! Página em construção.",
     "description": "Esta página ainda está em construção. Nossos melhores gatos engenheiros estão trabalhando nisso!",
     "cta": "Retornar à página inicial"
+  },
+  "cv": {
+    "header": {
+      "name": "Suetone Carneiro",
+      "role": "Desenvolvedor de Software",
+      "email": "suetoneneto12@gmail.com",
+      "phone": "+55 (83) 9 8725-2017",
+      "location": "Brazil",
+      "portfolio": "suetone.dev.br",
+      "linkedin": "linkedin.com/in/suetone-carneiro",
+      "github": "github.com/SuetoneCarneiro"
+    },
+    "labels": {
+      "summary": "Resumo",
+      "education": "Formação",
+      "skills": "Hard Skills",
+      "languages": "Idiomas",
+      "experience": "Experiência",
+      "extra": "Atividades Extracurriculares & Projetos",
+      "download": "Baixar em PDF"
+    },
+    "summary": "Tenho grande interesse em aprender na prática e transmitir conhecimento. Na universidade, participo de atividades extracurriculares sempre que possível. Tenho boa comunicação e facilidade para trabalhar em equipe. Desenvolvi projetos fullstack utilizando Python, Django, TypeScript, NextJs, VueJs e outras tecnologias.",
+    "education": [
+      {
+        "course": "Sistemas para Internet",
+        "institution": "IFPB",
+        "period": "Previsão de conclusão: 08/2026"
+      },
+      {
+        "course": "Engenharia da Computação",
+        "institution": "Mondragon University, Espanha",
+        "period": "De setembro/2025 a fevereiro/2026 (programa de intercâmbio)"
+      }
+    ],
+    "skills": [
+      "Python", "Git and Github", "Django", "Java Spring Boot", "NextJs and TypeScript", "PostgreSQL"
+    ],
+    "languages": [
+      { "name": "Portuguese", "level": "Native speaker" },
+      { "name": "English", "level": "Advanced speaker" },
+      { "name": "Spanish", "level": "Advanced speaker" }
+    ],
+    "experience": [
+      {
+        "role": "Intercâmbio em Engenharia da Computação",
+        "company": "Mondragon University, Espanha",
+        "period": "Setembro/2025 - Fevereiro/2026",
+        "description": "Estudei um semestre completo na Espanha. Lá, cursei disciplinas como Engenharia de Software, Inteligência Artificial, Gestão de Projetos e Análise de Dados. Também trabalhei em grupo e desenvolvi um projeto de reconhecimento facial utilizando Redes Neurais Convolucionais para aplicações médicas."
+      },
+      {
+        "role": "Estagiário Desenvolvedor de Software",
+        "company": "IFPB Innovation Hub",
+        "period": "Maio/2025 - Agosto/2025",
+        "description": "Atuei como desenvolvedor VueJs, construindo novas funcionalidades e realizando refatorações, colaborando com a equipe de desenvolvimento. Trabalhei com TypeScript, VueJs, GitLab e Vitest para testes automatizados."
+      },
+      {
+        "role": "Estagiário Desenvolvedor de Software",
+        "company": "Engeselt Softwares",
+        "period": "Dezembro/2024 - Maio/2025",
+        "description": "Atuei como desenvolvedor Python/Django realizando manutenção em um sistema de gestão e colaborando com a equipe no desenvolvimento de novas funcionalidades. Trabalhei com Python, JavaScript, Docker, Celery e Selenium para testes automatizados."
+      },
+      {
+        "role": "Desenvolvedor de Software",
+        "company": "Empresa Júnior Unisigma",
+        "period": "2024 - 2025",
+        "description": "Trabalhei como desenvolvedor em um projeto universitário que introduz os estudantes ao mercado e ao empreendedorismo."
+      },
+      {
+        "role": "Tutor de Programação",
+        "company": "Escola Pública de Ensino Fundamental",
+        "period": "2024",
+        "description": "Atuei como tutor de programação no projeto CODE, iniciativa da Secretaria de Educação de João Pessoa para introduzir crianças do ensino fundamental aos conceitos de algoritmos e programação."
+      },
+      {
+        "role": "Desenvolvedor no Django Developers Brazil",
+        "company": "Django Developers Brazil",
+        "period": "2024",
+        "description": "Participei como desenvolvedor na primeira turma do Django Developers Brasil, projeto criado para simular um ambiente real de trabalho enquanto aprendíamos o framework Django. Trabalhamos em um projeto desde o esboço até a produção."
+      }
+    ],
+    "extra": [
+      {
+        "title": "Palestrante - IFTECH 2025",
+        "period": "2025",
+        "description": "Ministrei um curso introdutório sobre Testes Unitários utilizando Vitest, juntamente com a equipe do Polo de inovação do IFPB."
+      },
+      {
+        "title": "Monitor - Interação Humano-Computador",
+        "period": "2025",
+        "description": "Monitor da disciplina de Interação Humano-Computador, focada nos princípios de usabilidade e UI/UX."
+      },
+      {
+        "title": "Palestrante - IFTECH 2024",
+        "period": "2024",
+        "description": "Ministrei o curso 'Git e Github: guia básico de sobrevivência', oferecido no IFTECH, principal evento anual da unidade de TI do IFPB."
+      },
+      {
+        "title": "Monitor - Algoritmos",
+        "period": "2024",
+        "description": "Monitor da disciplina de algoritmos e programação estruturada utilizando Python."
+      },
+      {
+        "title": "Formação em IA e IOT pelo Polo de Inovação do IFPB",
+        "period": "2024",
+        "description": "Participei da formação oferecida pelo Polo de Inovação do IFPB (Laboratório Assert). Nela, aprofundei meus conhecimentos sobre algoritmos de IA e sistemas de IOT, além de desenvolver projetos em ambas as áreas."
+      },
+      {
+        "title": "Introdução à Programação Competitiva",
+        "period": "2023 - 2024",
+        "description": "Participei da formação promovida pelo Projeto Olímpico de Programação do IFPB, com foco em algoritmos, estruturas de dados e problemas de competição. O curso foi realizado utilizando C++."
+      }
+    ]
   }
 }

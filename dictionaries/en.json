@@ -32,5 +32,117 @@
     "title": "Oops! Page under construction.",
     "description": "This page is still under construction. Our best cat engineers are working on it!",
     "cta": "Return to homepage"
+  },
+  "cv": {
+    "header": {
+      "name": "Suetone Carneiro",
+      "role": "Software Developer",
+      "email": "suetoneneto12@gmail.com",
+      "phone": "+55 (83) 9 8725-2017",
+      "location": "Brazil",
+      "portfolio": "suetone.dev.br",
+      "linkedin": "linkedin.com/in/suetone-carneiro",
+      "github": "github.com/SuetoneCarneiro"
+    },
+    "labels": {
+      "summary": "Summary",
+      "education": "Education",
+      "skills": "Hard Skills",
+      "languages": "Languages",
+      "experience": "Experience",
+      "extra": "Extracurricular & Projects",
+      "download": "Download PDF"
+    },
+    "summary": "I am really keen on learning in practice and transmitting knowledge. At university, I get involved in extracurricular activities whenever possible. I communicate and handle teamwork very well. I have developed fullstack projects using Python, Django, TypeScript, NextJs, VueJs and more.",
+    "education": [
+      {
+        "course": "Internet Systems",
+        "institution": "IFPB",
+        "period": "Expected graduation: 08/2026"
+      },
+      {
+        "course": "Computer Engineering",
+        "institution": "Mondragon University, Spain",
+        "period": "From September/2025 to February/2026 (exchange program)"
+      }
+    ],
+    "skills": [
+      "Python", "Git and Github", "Django", "Java Spring Boot", "NextJs and TypeScript", "PostgreSQL"
+    ],
+    "languages": [
+      { "name": "Portuguese", "level": "Native speaker" },
+      { "name": "English", "level": "Advanced speaker" },
+      { "name": "Spanish", "level": "Advanced speaker" }
+    ],
+    "experience": [
+      {
+        "role": "Computer Engineering Exchange",
+        "company": "Mondragon University, Spain",
+        "period": "September/2025 - February/2026",
+        "description": "I studied a whole semester in Spain. There, I took courses on Software Engineering, Artificial Intelligence, Project Management, and Data Analysis. I also worked in group and developed a project on facial recognition using Convolutional Neural Networks to medical applications."
+      },
+      {
+        "role": "Software Developer Intern",
+        "company": "IFPB Innovation Hub",
+        "period": "May/2025 - August/2025",
+        "description": "I worked as a VueJs developer, constructing new features and refactoring, cooperating with the development team to create new features. Dealing with TypeScript, VueJs, GitLab, and Vitest for automated tests."
+      },
+      {
+        "role": "Software Developer Intern",
+        "company": "Engeselt Softwares",
+        "period": "December/2024 - May/2025",
+        "description": "I worked as a Python/Django developer maintaining a management system and cooperating with the development team to create new features. Dealing with Python, JavaScript, Docker, Celery, and Selenium for automated tests."
+      },
+      {
+        "role": "Software Developer",
+        "company": "Junior Enterprise Unisigma",
+        "period": "2024 - 2025",
+        "description": "Developer at a university project that introduces students to the business world."
+      },
+      {
+        "role": "Programming Tutor",
+        "company": "Public Elementary School",
+        "period": "2024",
+        "description": "I worked as a Programming Tutor on the CODE project, a project by the João Pessoa education department to introduce elementary school children to algorithms and programming."
+      },
+      {
+        "role": "Developer at Django Developers Brazil",
+        "company": "Django Developers Brazil",
+        "period": "2024",
+        "description": "I participated as a developer on the first class of Django Developers Brasil, a project built to simulate a real work environment while learning Django Framework. We worked on a project from sketch to production."
+      }
+    ],
+    "extra": [
+      {
+        "title": "Event Speaker - IFTECH 2025",
+        "period": "2025",
+        "description": "Taught a course of introduction to Unit Tests using Vitest."
+      },
+      {
+        "title": "Teaching Assistant - Human Computer Interaction",
+        "period": "2025",
+        "description": "Teaching assistant for the Human Computer Interaction course. The course is focused on the principles of usability and UI/UX."
+      },
+      {
+        "title": "Event Speaker - IFTECH 2024",
+        "period": "2024",
+        "description": "I taught a course named 'Git and Github: a survival guide', offered at IFTECH, the main annual event of the IFPB IT unit."
+      },
+      {
+        "title": "Teaching Assistant - Algorithms",
+        "period": "2024",
+        "description": "Teaching assistant for the algorithms and structured programming course using Python."
+      },
+      {
+        "title": "IA and IOT training by IFPB Innovation Hub",
+        "period": "2024",
+        "description": "I took the training course offered by the IFPB Innovation Hub (Assert Laboratory). In it, I was able to learn in more depth how AI algorithms and IOT systems work, as well as develop projects on both topics."
+      },
+      {
+        "title": "Introduction to Competitive Programming",
+        "period": "2023 - 2024",
+        "description": "I participated in the training carried out by the IFPB's Olympic Programming Project focusing on algorithms and data structures and competition problems. The course is taken using C++."
+      }
+    ]
   }
 }
