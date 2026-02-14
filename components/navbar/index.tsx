@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 interface NavDict {
   home: string;
@@ -30,14 +31,16 @@ export function Navbar({ dict, lang }: Readonly<NavbarProps>) {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-gray-800 text-white">
-      <div className="p-4 flex items-center justify-between">
+      <div className="p-4 flex items-center justify-between text-gray-900 bg-[var(--secondary)] border-[var(--border)]">
         <div className="text-lg font-semibold">
           <Link href={`/${lang}`}>Suetone.dev.br</Link>
         </div>
+        <div className="flex items-center gap-2 md:gap-4">
+          <ThemeToggle />
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden p-2 rounded hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-white"
+          className="md:hidden p-2 text-gray-600 hover:bg-gray-100 bg-[var(--secondary)] border-[var(--border)] rounded-md"
           aria-label="Toggle menu"
           aria-expanded={open}
           onClick={() => setOpen((s) => !s)}
@@ -67,27 +70,27 @@ export function Navbar({ dict, lang }: Readonly<NavbarProps>) {
         >
           <ul className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 p-4 md:p-0">
             <li>
-              <Link href={`/${lang}`} onClick={() => setOpen(false)}>
+              <Link href={`/${lang}`} className="text-gray-600 hover:text-blue-600 bg-[var(--secondary)] border-[var(--border)] font-medium transition-colors" onClick={() => setOpen(false)}>
                 {dict.home}
               </Link>
             </li>
             <li>
-              <Link href="#projects" onClick={() => setOpen(false)}>
+              <Link href="#projects" className="text-gray-600 hover:text-blue-600 bg-[var(--secondary)] border-[var(--border)] font-medium transition-colors" onClick={() => setOpen(false)}>
                 {dict.projects}
               </Link>
             </li>
             <li>
-              <Link href={`/${lang}/curriculo`} onClick={() => setOpen(false)}>
+              <Link href={`/${lang}/curriculo`} className="text-gray-600 hover:text-blue-600 bg-[var(--secondary)] border-[var(--border)] font-medium transition-colors" onClick={() => setOpen(false)}>
                 {dict.curriculum}
               </Link>
             </li>
             <li>
-              <Link href={`/${lang}/biblioteca`} onClick={() => setOpen(false)}>
+              <Link href={`/${lang}/biblioteca`} className="text-gray-600 hover:text-blue-600 bg-[var(--secondary)] border-[var(--border)] font-medium transition-colors" onClick={() => setOpen(false)}>
                 {dict.library}
               </Link>
             </li>
             <li>
-              <Link href={`/${lang}/blog`} onClick={() => setOpen(false)}>
+              <Link href={`/${lang}/blog`} className="text-gray-600 hover:text-blue-600 bg-[var(--secondary)] border-[var(--border)] font-medium transition-colors" onClick={() => setOpen(false)}>
                 {dict.blog}
               </Link>
             </li>
@@ -105,18 +108,18 @@ export function Navbar({ dict, lang }: Readonly<NavbarProps>) {
 
               {/* Dropdown Menu */}
               {langMenuOpen && (
-                <div className="absolute right-0 mt-2 w-32 bg-white rounded-md shadow-lg py-1 z-50 text-gray-800">
+                <div className="absolute right-0 mt-2 w-32 bg-white dark:bg-gray-900 border dark:border-gray-800 rounded-md shadow-lg py-1 z-50 text-gray-800">
                   <Link 
                     href={redirectedPathName("en")} 
                     onClick={() => setLangMenuOpen(false)}
-                    className="block px-4 py-2 hover:bg-gray-100 text-sm"
+                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 text-sm"
                   >
                     🇬🇧 English
                   </Link>
                   <Link 
                     href={redirectedPathName("pt")} 
                     onClick={() => setLangMenuOpen(false)}
-                    className="block px-4 py-2 hover:bg-gray-100 text-sm"
+                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 text-sm"
                   >
                     🇧🇷 Português
                   </Link>
@@ -144,6 +147,7 @@ export function Navbar({ dict, lang }: Readonly<NavbarProps>) {
             </li>
           </ul>
         </nav>
+        </div>
       </div>
       {langMenuOpen && (
         <button className="fixed inset-0 z-40 hidden md:block" 

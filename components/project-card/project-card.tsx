@@ -11,7 +11,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({title, description, imageSrc, projectUrl, btnText}: ProjectCardProps) {
     return(
-    <div className="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+    <div className="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white border-gray-200 bg-[var(--secondary)] border-[var(--border)] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
       <div className="relative h-48 w-full overflow-hidden bg-gray-100">
         <Image
           src={imageSrc}
@@ -22,11 +22,11 @@ export function ProjectCard({title, description, imageSrc, projectUrl, btnText}:
       </div>
 
       {/* Content Area */}
-      <div className="flex flex-1 flex-col p-6">
-        <h3 className="mb-2 text-xl font-bold text-gray-900">
+      <div className="flex flex-1 flex-col p-6 text-gray-900 border-gray-200 bg-[var(--secondary)] border-[var(--border)]">
+        <h3 className="mb-2 text-xl font-bold text-gray-900 bg-[var(--secondary)] border-[var(--border)]">
           {title}
         </h3>
-        <p className="mb-6 flex-1 text-gray-600">
+        <p className="mb-6 flex-1 text-gray-600 text-gray-600 bg-[var(--secondary)] border-[var(--border)]">
           {description}
         </p>
 
