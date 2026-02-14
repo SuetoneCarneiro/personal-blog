@@ -20,7 +20,7 @@ export function ThemeToggle(){
     return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="rounded-md p-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+      className="rounded-md p-2 hover:bg-secondary transition-colors focus:outline-none focus:ring-2 focus:ring-primary"
       aria-label="Toggle Dark Mode"
     >
       {theme === "dark" ? (
@@ -52,7 +52,7 @@ export function ThemeToggle(){
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="text-gray-600"
+          className="text-foreground"
         >
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
         </svg>

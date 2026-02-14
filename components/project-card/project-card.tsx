@@ -11,8 +11,8 @@ interface ProjectCardProps {
 
 export function ProjectCard({title, description, imageSrc, projectUrl, btnText}: ProjectCardProps) {
     return(
-    <div className="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white border-gray-200 bg-[var(--secondary)] border-[var(--border)] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-      <div className="relative h-48 w-full overflow-hidden bg-gray-100">
+    <div className="flex flex-col overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+      <div className="relative h-48 w-full overflow-hidden bg-muted">
         <Image
           src={imageSrc}
           alt={title}
@@ -22,11 +22,11 @@ export function ProjectCard({title, description, imageSrc, projectUrl, btnText}:
       </div>
 
       {/* Content Area */}
-      <div className="flex flex-1 flex-col p-6 text-gray-900 border-gray-200 bg-[var(--secondary)] border-[var(--border)]">
-        <h3 className="mb-2 text-xl font-bold text-gray-900 bg-[var(--secondary)] border-[var(--border)]">
+      <div className="flex flex-1 flex-col p-6 text-card-foreground">
+        <h3 className="mb-2 text-xl font-bold">
           {title}
         </h3>
-        <p className="mb-6 flex-1 text-gray-600 text-gray-600 bg-[var(--secondary)] border-[var(--border)]">
+        <p className="mb-6 flex-1 text-muted-foreground">
           {description}
         </p>
 
@@ -34,7 +34,7 @@ export function ProjectCard({title, description, imageSrc, projectUrl, btnText}:
         <Link
           href={projectUrl}
           target="_blank"
-          className="inline-flex items-center justify-center rounded-lg bg-gray-900 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-gray-700"
+          className="inline-flex items-center justify-center rounded-lg bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:opacity-90"
         >
           {btnText}
         </Link>

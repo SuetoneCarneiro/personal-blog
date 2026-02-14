@@ -30,8 +30,8 @@ export function Navbar({ dict, lang }: Readonly<NavbarProps>) {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-gray-800 text-white">
-      <div className="p-4 flex items-center justify-between text-gray-900 bg-[var(--secondary)] border-[var(--border)]">
+    <header className="sticky top-0 z-50 w-full border-border bg-background/80 backdrop-blur-md">
+      <div className="p-4 flex items-center justify-between text-foreground">
         <div className="text-lg font-semibold">
           <Link href={`/${lang}`}>Suetone.dev.br</Link>
         </div>
@@ -40,7 +40,7 @@ export function Navbar({ dict, lang }: Readonly<NavbarProps>) {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden p-2 text-gray-600 hover:bg-gray-100 bg-[var(--secondary)] border-[var(--border)] rounded-md"
+          className="md:hidden p-2 text-muted-foreground hover:bg-secondary rounded-md"
           aria-label="Toggle menu"
           aria-expanded={open}
           onClick={() => setOpen((s) => !s)}
@@ -70,27 +70,27 @@ export function Navbar({ dict, lang }: Readonly<NavbarProps>) {
         >
           <ul className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 p-4 md:p-0">
             <li>
-              <Link href={`/${lang}`} className="text-gray-600 hover:text-blue-600 bg-[var(--secondary)] border-[var(--border)] font-medium transition-colors" onClick={() => setOpen(false)}>
+              <Link href={`/${lang}`} className="text-muted-foreground hover:text-primary font-medium transition-colors" onClick={() => setOpen(false)}>
                 {dict.home}
               </Link>
             </li>
             <li>
-              <Link href="#projects" className="text-gray-600 hover:text-blue-600 bg-[var(--secondary)] border-[var(--border)] font-medium transition-colors" onClick={() => setOpen(false)}>
+              <Link href="#projects" className="text-muted-foreground hover:text-primary font-medium transition-colors" onClick={() => setOpen(false)}>
                 {dict.projects}
               </Link>
             </li>
             <li>
-              <Link href={`/${lang}/curriculo`} className="text-gray-600 hover:text-blue-600 bg-[var(--secondary)] border-[var(--border)] font-medium transition-colors" onClick={() => setOpen(false)}>
+              <Link href={`/${lang}/curriculo`} className="text-muted-foreground hover:text-primary font-medium transition-colors" onClick={() => setOpen(false)}>
                 {dict.curriculum}
               </Link>
             </li>
             <li>
-              <Link href={`/${lang}/biblioteca`} className="text-gray-600 hover:text-blue-600 bg-[var(--secondary)] border-[var(--border)] font-medium transition-colors" onClick={() => setOpen(false)}>
+              <Link href={`/${lang}/biblioteca`} className="text-muted-foreground hover:text-primary font-medium transition-colors" onClick={() => setOpen(false)}>
                 {dict.library}
               </Link>
             </li>
             <li>
-              <Link href={`/${lang}/blog`} className="text-gray-600 hover:text-blue-600 bg-[var(--secondary)] border-[var(--border)] font-medium transition-colors" onClick={() => setOpen(false)}>
+              <Link href={`/${lang}/blog`} className="text-muted-foreground hover:text-primary font-medium transition-colors" onClick={() => setOpen(false)}>
                 {dict.blog}
               </Link>
             </li>
@@ -98,7 +98,7 @@ export function Navbar({ dict, lang }: Readonly<NavbarProps>) {
             <li className="relative hidden md:block">
               <button 
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
-                className="flex items-center gap-1 uppercase font-bold text-sm bg-gray-700 hover:bg-gray-600 px-3 py-1.5 rounded transition-colors"
+                className="flex items-center gap-1 uppercase font-bold text-sm bg-secondary text-secondary-foreground hover:bg-muted px-3 py-1.5 rounded transition-colors"
               >
                 <span>{lang}</span>
                 <svg className={`w-4 h-4 transition-transform ${langMenuOpen ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">

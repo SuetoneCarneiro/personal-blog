@@ -6,7 +6,7 @@ export async function Footer({lang}: Readonly<{lang: string}>) {
   const dictionary = await getDictionary(lang as "en" | "pt");
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-muted text-muted-foreground">
       <div className="container mx-auto px-6 py-12">
         <div className="flex flex-col items-center gap-8">
           <div className="flex gap-6">
@@ -15,7 +15,7 @@ export async function Footer({lang}: Readonly<{lang: string}>) {
               href="https://github.com/SuetoneCarneiro"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 transition-colors hover:text-white"
+              className="text-muted-foreground transition-colors hover:text-foreground"
               aria-label="GitHub"
             >
               <svg
@@ -31,7 +31,7 @@ export async function Footer({lang}: Readonly<{lang: string}>) {
               href="https://linkedin.com/in/suetone-carneiro"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 transition-colors hover:text-white"
+              className="text-muted-foreground transition-colors hover:text-foreground"
               aria-label="LinkedIn"
             >
               <svg
@@ -46,16 +46,16 @@ export async function Footer({lang}: Readonly<{lang: string}>) {
 
           {/* Section 2: navigation links */}
           <div className="flex flex-wrap justify-center gap-8 font-medium">
-            <Link href="/#projects" className="transition-colors hover:text-white">
+            <Link href="/#projects" className="transition-colors hover:text-foreground">
               {dictionary.nav.projects}
             </Link>
-            <Link href={`/${lang}/curriculo`} className="transition-colors hover:text-white">
+            <Link href={`/${lang}/curriculo`} className="transition-colors hover:text-foreground">
               {dictionary.nav.curriculum}
             </Link>
-            <Link href={`/${lang}/biblioteca`} className="transition-colors hover:text-white">
+            <Link href={`/${lang}/biblioteca`} className="transition-colors hover:text-foreground">
               {dictionary.nav.library}
             </Link>
-            <Link href={`/${lang}/blog`} className="transition-colors hover:text-white">
+            <Link href={`/${lang}/blog`} className="transition-colors hover:text-foreground">
               {dictionary.nav.blog}
             </Link>
           </div>
@@ -63,7 +63,7 @@ export async function Footer({lang}: Readonly<{lang: string}>) {
         </div>
 
         {/* Separator */}
-        <div className="my-8 border-t border-gray-800"></div>
+        <div className="my-8 border-t border-foreground"></div>
 
         {/* Section 3: Copyright & Credits */}
         <div className="flex flex-col items-center justify-between text-sm text-gray-500 md:flex-row">
@@ -72,7 +72,7 @@ export async function Footer({lang}: Readonly<{lang: string}>) {
           </p>
           <div className="mt-4 flex items-center gap-1 md:mt-0">
             <span>Developed with</span>
-            <span className="font-semibold text-white">Next.js</span>
+            <span className="font-semibold text-foreground">Next.js</span>
             <span>by Suetone Carneiro</span>
           </div>
         </div>
