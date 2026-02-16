@@ -18,20 +18,20 @@ interface NavbarProps {
 
 export function Navbar({ dict, lang }: Readonly<NavbarProps>) {
   const [open, setOpen] = useState(false);
-  const [langMenuOpen, setLangMenuOpen] = useState(false); // Language dropdown state
+  const [langMenuOpen, setLangMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  // Function to switch language while keeping the current page
   const redirectedPathName = (locale: string) => {
     if (!pathname) return "/";
     const segments = pathname.split("/");
-    segments[1] = locale; // Replace the language segment (e.g., 'en' -> 'pt')
+    segments[1] = locale; 
     return segments.join("/");
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-border bg-background/80 backdrop-blur-md">
-      <div className="p-4 flex items-center justify-between text-foreground">
+    // FIX 2: Solid color (bg-card) with border for visual division. No glass effect.
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-card transition-colors duration-300">
+      <div className="p-4 flex items-center justify-between text-card-foreground">
         <div className="text-lg font-semibold">
           <Link href={`/${lang}`}>Suetone.dev.br</Link>
         </div>
@@ -46,29 +46,27 @@ export function Navbar({ dict, lang }: Readonly<NavbarProps>) {
           onClick={() => setOpen((s) => !s)}
         >
           {open ? (
-            // close icon
             <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
           ) : (
-            // hamburger icon
             <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           )}
         </button>
 
-        {/* Nav - hidden on small screens unless `open` */}
         <nav
           className={
             "md:flex items-center gap-4 " +
             (open
-              ? "block absolute right-4 top-[64px] mt-2 w-48 bg-gray-800 shadow md:static md:shadow-none md:w-auto z-50"
+              ? "block absolute right-4 top-[64px] mt-2 w-48 bg-card border border-border shadow-lg md:static md:shadow-none md:border-none md:w-auto z-50 rounded-md"
               : "hidden md:block")
           }
           aria-hidden={!open}
         >
           <ul className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 p-4 md:p-0">
+            {/* Links use foreground text and primary hover */}
             <li>
               <Link href={`/${lang}`} className="text-muted-foreground hover:text-primary font-medium transition-colors" onClick={() => setOpen(false)}>
                 {dict.home}
@@ -94,7 +92,8 @@ export function Navbar({ dict, lang }: Readonly<NavbarProps>) {
                 {dict.blog}
               </Link>
             </li>
-            {/* --- Desktop Language Switcher (Dropdown) --- */}
+            
+            {/* --- FIX 3: Dropdown Menu using Semantic Colors --- */}
             <li className="relative hidden md:block">
               <button 
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
@@ -106,40 +105,40 @@ export function Navbar({ dict, lang }: Readonly<NavbarProps>) {
                 </svg>
               </button>
 
-              {/* Dropdown Menu */}
               {langMenuOpen && (
-                <div className="absolute right-0 mt-2 w-32 bg-white dark:bg-gray-900 border dark:border-gray-800 rounded-md shadow-lg py-1 z-50 text-gray-800">
+                <div className="absolute right-0 mt-2 w-32 bg-card border border-border rounded-md shadow-lg py-1 z-50">
                   <Link 
                     href={redirectedPathName("en")} 
                     onClick={() => setLangMenuOpen(false)}
-                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 text-sm"
+                    className="block px-4 py-2 hover:bg-muted text-card-foreground text-sm transition-colors"
                   >
                     🇬🇧 English
                   </Link>
                   <Link 
                     href={redirectedPathName("pt")} 
                     onClick={() => setLangMenuOpen(false)}
-                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 text-sm"
+                    className="block px-4 py-2 hover:bg-muted text-card-foreground text-sm transition-colors"
                   >
                     🇧🇷 Português
                   </Link>
                 </div>
               )}
             </li>
-            {/* --- Mobile Language Options (Visible inside the menu) --- */}
-            <li className="mt-4 border-t border-gray-700 pt-4 md:hidden">
+
+            {/* Mobile Lang Options */}
+            <li className="mt-4 border-t border-border pt-4 md:hidden">
               <div className="flex justify-center gap-4">
                 <Link 
                   href={redirectedPathName("en")} 
                   onClick={() => setOpen(false)}
-                  className={`px-3 py-1 rounded text-sm ${lang === 'en' ? 'bg-blue-600 font-bold' : 'bg-gray-700'}`}
+                  className={`px-3 py-1 rounded text-sm ${lang === 'en' ? 'bg-primary text-primary-foreground font-bold' : 'bg-secondary text-secondary-foreground'}`}
                 >
                   EN
                 </Link>
                 <Link 
                   href={redirectedPathName("pt")} 
                   onClick={() => setOpen(false)}
-                  className={`px-3 py-1 rounded text-sm ${lang === 'pt' ? 'bg-blue-600 font-bold' : 'bg-gray-700'}`}
+                  className={`px-3 py-1 rounded text-sm ${lang === 'pt' ? 'bg-primary text-primary-foreground font-bold' : 'bg-secondary text-secondary-foreground'}`}
                 >
                   PT
                 </Link>

@@ -21,7 +21,6 @@ export function ProjectCard({title, description, imageSrc, projectUrl, btnText}:
         />
       </div>
 
-      {/* Content Area */}
       <div className="flex flex-1 flex-col p-6 text-card-foreground">
         <h3 className="mb-2 text-xl font-bold">
           {title}
@@ -29,12 +28,11 @@ export function ProjectCard({title, description, imageSrc, projectUrl, btnText}:
         <p className="mb-6 flex-1 text-muted-foreground">
           {description}
         </p>
-
-        {/* Action Button */}
+        
         <Link
           href={projectUrl}
           target="_blank"
-          className="inline-flex items-center justify-center rounded-lg bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:opacity-90"
+          className="inline-flex items-center justify-center rounded-lg bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 hover:shadow-md"
         >
           {btnText}
         </Link>

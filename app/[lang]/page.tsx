@@ -8,16 +8,13 @@ export default async function Home({ params, }: Readonly<{ params: Promise<{ lan
   const dictionary = await getDictionary(lang as 'en' | 'pt');
 
   return (
-    // Main container with min-height to center content vertically
     <main className="flex min-h-screen flex-col">
-      <section className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-background p-6 md:p-24">
+      {/* Hero Section: uses Default Background */}
+      <section className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-background p-6 md:p-24 transition-colors duration-300">
         <div className="container mx-auto flex w-full max-w-6xl flex-col-reverse items-center justify-between gap-12 md:flex-row">
           
-          {/* Left side: text content */}
           <div className="flex flex-1 flex-col items-center text-center md:items-start md:text-left">
-            
-            
-            <h1 className="mb-2 text-5xl font-extrabold tracking-tight text-primary md:text-5xl">
+            <h1 className="mb-2 text-5xl font-extrabold tracking-tight text-foreground md:text-5xl">
               Suetone Carneiro
             </h1>
             
@@ -29,18 +26,16 @@ export default async function Home({ params, }: Readonly<{ params: Promise<{ lan
               {dictionary.home.description}
             </p>
             
-            {/* CTA Button */}
             <Link
               href={`/${lang}/curriculo`}
-              className="rounded-lg bg-primary px-8 py-4 text-base font-semibold text-primary-foreground transition-all hover:bg-slate-600 hover:shadow-lg"
+              className="rounded-lg bg-primary px-8 py-4 text-base font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg"
             >
               {dictionary.home.cta}
             </Link>
           </div>
 
-          {/* Right side: image space */}
           <div className="flex flex-1 justify-center md:justify-end">
-            <div className="relative h-64 w-64 overflow-hidden border-4 border-gray-100 shadow-2xl md:h-96 md:w-96">
+            <div className="relative h-64 w-64 overflow-hidden border-2 border-border shadow-2xl md:h-96 md:w-96">
               <Image
                 src="/me.png" 
                 alt="Suetone Carneiro"
@@ -53,11 +48,9 @@ export default async function Home({ params, }: Readonly<{ params: Promise<{ lan
         </div> 
       </section>
 
-      {/* --- PROJECTS SECTION --- */}
-      <section id="projects" className="bg-secondary py-20">
+      {/* Projects section - Visual Division */}
+      <section id="projects" className="bg-secondary py-20 transition-colors duration-300">
         <div className="container mx-auto px-6 max-w-6xl">
-          
-          {/* Section Header */}
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               {dictionary.home.featured}
@@ -67,9 +60,7 @@ export default async function Home({ params, }: Readonly<{ params: Promise<{ lan
             </p>
           </div>
 
-          {/* Projects Grid */}
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            
             <ProjectCard 
               title={dictionary.projects.card1.title}
               description={dictionary.projects.card1.description}
@@ -93,12 +84,9 @@ export default async function Home({ params, }: Readonly<{ params: Promise<{ lan
               projectUrl="https://github.com/SuetoneCarneiro/bingo"
               btnText={dictionary.projects.learn_more}
             />
-
           </div>
         </div>
       </section>
-
-      
     </main>
   );
 }
