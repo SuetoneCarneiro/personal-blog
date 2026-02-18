@@ -22,7 +22,7 @@ export function WorkInProgress({
     <div className="flex min-h-[60vh] flex-col items-center justify-center px-4 text-center">
       
        {/* Title */}
-      <h1 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
+      <h1 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
         {title}
       </h1>
 
@@ -36,7 +36,7 @@ export function WorkInProgress({
         />
       </div>
 
-      <p className="mb-8 max-w-lg text-lg text-gray-600">
+      <p className="mb-8 max-w-lg text-lg text-foreground">
         {description}
       </p>
 

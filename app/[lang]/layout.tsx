@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
 import { getDictionary } from "@/lib/get-dictionary";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,15 +36,24 @@ export default async function RootLayout({
   const { lang } = await params;
   const dictionary = await getDictionary(lang as 'en' | 'pt');
   return (
-    <html lang={lang}>
+    <html lang={lang} suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar dict={dictionary.nav} lang={lang} />
-        <div className="flex-grow">
-          {children}
-        </div>
-        <Footer lang={lang} />
+        <ThemeProvider
+          attribute="class" // adds 'dark' class to <html>
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+        <div className="flex min-h-screen flex-col bg-[var(--secondary)] border-[var(--border)]">
+            <Navbar dict={dictionary.nav} lang={lang} />
+            <div className="flex-grow">
+              {children}
+            </div>
+            <Footer lang={lang} />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
