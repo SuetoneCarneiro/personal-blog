@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from '@vercel/analytics/next';
 import "./globals.css";
-import { Navbar } from '../components/navbar';
-import { Footer } from '../components/footer';
+import { Navbar } from '@/components/navbar';
+import { Footer } from '@/components/footer';
+import { getDictionary } from "@/lib/get-dictionary";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,21 +27,34 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ lang: string }>;
 }>) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang as 'en' | 'pt');
   return (
-    <html lang="en">
+    <html lang={lang} suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        <div className="flex-grow">
-          {children}
-        </div>
-        <Footer />
+        <ThemeProvider
+          attribute="class" // adds 'dark' class to <html>
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+        <div className="flex min-h-screen flex-col bg-[var(--secondary)] border-[var(--border)]">
+            <Navbar dict={dictionary.nav} lang={lang} />
+            <div className="flex-grow">
+              {children}
+            </div>
+            <Footer lang={lang} />
+          </div>
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>
