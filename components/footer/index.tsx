@@ -66,7 +66,7 @@ export async function Footer({lang}: Readonly<{lang: string}>) {
         <div className="my-8 border-t border-foreground"></div>
 
         {/* Section 3: Copyright & Credits */}
-        <div className="flex flex-col items-center justify-between text-sm text-gray-500 md:flex-row">
+        <div className="flex flex-col items-center justify-between text-sm text-muted-foreground md:flex-row">
           <p>
             &copy; {currentYear} Suetone Carneiro. All rights reserved.
           </p>

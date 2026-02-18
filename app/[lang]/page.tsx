@@ -9,7 +9,7 @@ export default async function Home({ params, }: Readonly<{ params: Promise<{ lan
 
   return (
     <main className="flex min-h-screen flex-col">
-      {/* Hero Section: uses Default Background */}
+      {/* Hero section */}
       <section className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-background p-6 md:p-24 transition-colors duration-300">
         <div className="container mx-auto flex w-full max-w-6xl flex-col-reverse items-center justify-between gap-12 md:flex-row">
           
@@ -35,7 +35,7 @@ export default async function Home({ params, }: Readonly<{ params: Promise<{ lan
           </div>
 
           <div className="flex flex-1 justify-center md:justify-end">
-            <div className="relative h-64 w-64 overflow-hidden border-2 border-border shadow-2xl md:h-96 md:w-96">
+            <div className="relative h-64 w-64 overflow-hidden border-4 border-primary-foreground shadow-2xl md:h-96 md:w-96">
               <Image
                 src="/me.png" 
                 alt="Suetone Carneiro"
