@@ -43,7 +43,7 @@
       "role": "Desenvolvedor de Software",
       "email": "suetoneneto12@gmail.com",
       "phone": "+55 (83) 9 8725-2017",
-      "location": "Brazil",
+      "location": "Brasil",
       "portfolio": "suetone.dev.br",
       "linkedin": "linkedin.com/in/suetone-carneiro",
       "github": "github.com/SuetoneCarneiro"
@@ -55,9 +55,12 @@
       "languages": "Idiomas",
       "experience": "Experiência",
       "extra": "Atividades Extracurriculares & Projetos",
-      "download": "Baixar em PDF"
+      "download": "Baixar em PDF",
+      "phone": "Telefone",
+      "email": "Email",
+      "location": "Localização"
     },
-    "summary": "Tenho grande interesse em aprender na prática e transmitir conhecimento. Na universidade, participo de atividades extracurriculares sempre que possível. Tenho boa comunicação e facilidade para trabalhar em equipe. Desenvolvi projetos fullstack utilizando Python, Django, TypeScript, NextJs, VueJs e outras tecnologias.",
+    "summary": "Desenvolvedor Fullstack com experiência em Python/Django, TypeScript/NextJs, Java Spring Boot e VueJs. Tenho um grande interesse em aprender na prática e compartilhar conhecimento, especialmente assuntos como arquitetura de software, escalabilidade, desenvolvimento assistido por IA e tópicos relacionados a negócios. Busco uma vaga para aplicar minhas habilidades fullstack, construir APIs escaláveis e contribuir para soluções de software impactantes.",
     "education": [
       {
         "course": "Sistemas para Internet",

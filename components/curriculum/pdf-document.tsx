@@ -7,8 +7,9 @@ const styles = StyleSheet.create({
   header: { marginBottom: 20, borderBottomWidth: 1, borderBottomColor: '#ccc', paddingBottom: 10 },
   name: { fontSize: 24, fontWeight: 'bold', textTransform: 'uppercase', marginBottom: 10 },
   role: { fontSize: 12, color: '#666', marginBottom: 5 },
-  contact: { flexDirection: 'row', gap: 10, fontSize: 9, color: '#444' },
+  contact: { flexDirection: 'column', gap: 4, fontSize: 10, color: '#444' },
   sectionTitle: { fontSize: 14, fontWeight: 'bold', marginTop: 15, marginBottom: 5, textTransform: 'uppercase', color: '#2c3e50' },
+  blueHighlight: { color: '#2980b9', fontWeight: 'bold' },
   
   // Grid layout for Skills
   row: { flexDirection: 'row', gap: 20 },
@@ -32,13 +33,14 @@ export const CvPdfDocument = ({ data }: { data: CvData }) => (
       <View style={styles.header}>
         <Text style={styles.name}>{data.header.name}</Text>
         <Text style={styles.role}>{data.header.role}</Text>
+        
         <View style={styles.contact}>
-          <Text>{data.header.email} | {data.header.phone} | {data.header.location}</Text>
-        </View>
-        <View style={styles.contact}>
-          <Text>{data.header.portfolio}</Text>
-          <Text>{data.header.linkedin}</Text>
-          <Text>{data.header.github}</Text>
+          <Text><Text style={styles.blueHighlight}>{data.labels.email}</Text>: {data.header.email}</Text>
+          <Text><Text style={styles.blueHighlight}>{data.labels.phone}</Text>: {data.header.phone}</Text>
+          <Text><Text style={styles.blueHighlight}>{data.labels.location}</Text>: {data.header.location}</Text>
+          <Text><Text style={styles.blueHighlight}>Website portfolio</Text>: https://{data.header.portfolio}</Text>
+          <Text><Text style={styles.blueHighlight}>LinkedIn</Text>: https://{data.header.linkedin}</Text>
+          <Text><Text style={styles.blueHighlight}>GitHub</Text>: https://{data.header.github}</Text>
         </View>
       </View>
 

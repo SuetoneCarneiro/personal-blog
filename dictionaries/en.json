@@ -55,9 +55,12 @@
       "languages": "Languages",
       "experience": "Experience",
       "extra": "Extracurricular & Projects",
-      "download": "Download PDF"
+      "download": "Download PDF",
+      "phone": "Phone",
+      "email": "Email",
+      "location": "Location"
     },
-    "summary": "I am really keen on learning in practice and transmitting knowledge. At university, I get involved in extracurricular activities whenever possible. I communicate and handle teamwork very well. I have developed fullstack projects using Python, Django, TypeScript, NextJs, VueJs and more.",
+    "summary": "Fullstack Developer with experience in Python/Django, TypeScript/NextJs, Java Spring Boot and VueJs. I have a strong interest in learning by doing and sharing knowledge, specially subjects like software architecture, scalability, AI assisted development and business related topics. Seeking a position to apply fullstack skills, build scalable APIs, and contribute to impactful software solutions.",
     "education": [
       {
         "course": "Internet Systems",

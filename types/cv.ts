@@ -17,6 +17,9 @@ export interface CvData {
     experience: string;
     extra: string;
     download: string;
+    phone: string;
+    email: string;
+    location: string;
   };
   summary: string;
   education: Array<{ course: string; institution: string; period: string }>;
