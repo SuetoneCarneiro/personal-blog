@@ -21,9 +21,12 @@ export const metadata: Metadata = {
   title: "Suetone Carneiro | Website",
   description: "Personal Website and portfolio of a Software Developer",
   openGraph:{
+    type: "website",
+    url: "https://www.suetone.dev.br", 
+    siteName: "suetone.dev.br",
     title: "Suetone Carneiro | Website",
     description: "Website pessoal e portfólio",
-    images: ['/home.png',]
+    images: ['/img/home-suetonedev.png',]
   },
 };
 

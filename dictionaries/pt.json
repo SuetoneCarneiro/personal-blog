@@ -26,6 +26,10 @@
     "card3":{
         "title":"Bingo! Divirta-se com seus amigos.",
         "description":"Fiz esse projeto mais pelo desafio técnico. Ele foi construído utilizando apenas JavaScript, HTML e CSS, sem frameworks. A ideia surgiu porque temos as cartelas de bingo em casa, mas não tinhamos nada para sortear e conseguir jogar com os amigos. É um projeto bem simples, mas funcional."
+    },
+    "card4":{
+        "title":"Webpage da LC Vistoria Veicular",
+        "description":"A LC Vistoria Veicular é uma empresa de vistoria veicular credenciada ao DETRAN-PE. Desenvolvi a página utilizando NextJs e TypeScript, com o objetivo de criar uma presença online moderna e funcional para a empresa. A ideia principal é disponibilizar informações úteis para os clientes."
     }
   },
   "work_in_progress": {

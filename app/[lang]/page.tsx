@@ -70,6 +70,14 @@ export default async function Home({ params, }: Readonly<{ params: Promise<{ lan
             />
 
             <ProjectCard 
+              title={dictionary.projects.card4.title}
+              description={dictionary.projects.card4.description}
+              imageSrc="/img/projects/home-lc.png"
+              projectUrl="https://www.lcvistoria.com.br"
+              btnText={dictionary.projects.learn_more}
+            />
+
+            <ProjectCard 
               title={dictionary.projects.card2.title}
               description={dictionary.projects.card2.description}
               imageSrc="/img/projects/genius-lab.png"
