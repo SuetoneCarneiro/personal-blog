@@ -9,12 +9,9 @@ export function WebView({ data }: Readonly<{ data: CvData }>) {
         <p className="text-xl text-blue-600 font-medium mt-2">{data.header.role}</p>
         <div className="mt-4 flex flex-wrap justify-center md:justify-start gap-4 text-sm text-gray-600">
           <span>{data.header.email}</span>
-          <span>•</span>
           <span>{data.header.location}</span>
-          <span>•</span>
-          <a href={`https://${data.header.github}`} className="hover:text-blue-600 hover:underline">GitHub</a>
-          <span>•</span>
-          <a href={`https://${data.header.linkedin}`} className="hover:text-blue-600 hover:underline">LinkedIn</a>
+          <a href={`https://${data.header.github}`} className="hover:text-blue-600 hover:underline font-bold">GitHub</a>
+          <a href={`https://${data.header.linkedin}`} className="hover:text-blue-600 hover:underline font-bold">LinkedIn</a>
         </div>
       </div>
 
