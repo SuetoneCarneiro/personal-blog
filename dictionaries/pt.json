@@ -15,19 +15,19 @@
   },
   "projects":{
     "learn_more": "Saiba mais",
-    "card1":{
+    "project_rescue":{
         "title":"Sistema de Reconhecimento Facial com IA para aplicações médicas - Mondragon, Espanha.",
         "description":"Esse sistema foi desenvolvido em equipe na Universidade de Mondragon. A ideia é usar um modelo de Rede Neural Convolucional para reconhecimento facial e recuperação de informações médicas sobre pacientes."
     },
-    "card2":{
+    "project_geniuslab":{
         "title":"Sistema de Gestão de Bibliotecas 'Genius Lab'.",
         "description":"Esse projeto me rendeu minha primeira vaga de estágio. Desenvolvido em Django com um banco de dados PostgreSQL, o projeto é um sistema de gestão de bibliotecas com funcionalidades de empréstimo, devolução, cadastro de livros e usuários e geração de relatórios."
     },
-    "card3":{
+    "project_bingo":{
         "title":"Bingo! Divirta-se com seus amigos.",
         "description":"Fiz esse projeto mais pelo desafio técnico. Ele foi construído utilizando apenas JavaScript, HTML e CSS, sem frameworks. A ideia surgiu porque temos as cartelas de bingo em casa, mas não tinhamos nada para sortear e conseguir jogar com os amigos. É um projeto bem simples, mas funcional."
     },
-    "card4":{
+    "project_lc":{
         "title":"Webpage da LC Vistoria Veicular",
         "description":"A LC Vistoria Veicular é uma empresa de vistoria veicular credenciada ao DETRAN-PE. Desenvolvi a página utilizando NextJs e TypeScript, com o objetivo de criar uma presença online moderna e funcional para a empresa. A ideia principal é disponibilizar informações úteis para os clientes."
     }

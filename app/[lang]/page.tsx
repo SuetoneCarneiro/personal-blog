@@ -62,32 +62,32 @@ export default async function Home({ params, }: Readonly<{ params: Promise<{ lan
 
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <ProjectCard 
-              title={dictionary.projects.card1.title}
-              description={dictionary.projects.card1.description}
+              title={dictionary.projects.project_rescue.title}
+              description={dictionary.projects.project_rescue.description}
               imageSrc="/img/projects/pbl-rescue.png"
               projectUrl="https://youtu.be/jO17bMynIs0"
               btnText={dictionary.projects.learn_more}
             />
 
             <ProjectCard 
-              title={dictionary.projects.card4.title}
-              description={dictionary.projects.card4.description}
+              title={dictionary.projects.project_lc.title}
+              description={dictionary.projects.project_lc.description}
               imageSrc="/img/projects/home-lc.png"
               projectUrl="https://www.lcvistoria.com.br"
               btnText={dictionary.projects.learn_more}
             />
 
             <ProjectCard 
-              title={dictionary.projects.card2.title}
-              description={dictionary.projects.card2.description}
+              title={dictionary.projects.project_geniuslab.title}
+              description={dictionary.projects.project_geniuslab.description}
               imageSrc="/img/projects/genius-lab.png"
               projectUrl="https://github.com/SuetoneCarneiro/Genius-Lab-biblioteca"
               btnText={dictionary.projects.learn_more}
             />
 
             <ProjectCard 
-              title={dictionary.projects.card3.title}
-              description={dictionary.projects.card3.description}
+              title={dictionary.projects.project_bingo.title}
+              description={dictionary.projects.project_bingo.description}
               imageSrc="/img/projects/bingo.png"
               projectUrl="https://github.com/SuetoneCarneiro/bingo"
               btnText={dictionary.projects.learn_more}
