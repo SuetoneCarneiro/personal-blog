@@ -15,19 +15,19 @@
   },
   "projects":{
     "learn_more": "Learn more",
-    "card1":{
+    "project_rescue":{
         "title":"Facial Recognition System with AI for medical applications - Mondragon, Spain.",
         "description":"This system was developed in a team at Mondragon University. The idea is to use a Convolutional Neural Network model for facial recognition and retrieval of medical information about patients."
     },
-    "card2":{
+    "project_geniuslab":{
         "title":"Library Management System 'Genius Lab'.",
         "description":"This project earned me my first internship. Developed in Django with a PostgreSQL database, the project is a library management system with features for borrowing, returning, registering books and users, and generating reports."
     },
-    "card3":{
+    "project_bingo":{
         "title":"Bingo! Have fun with your friends.",
         "description":"I did this project more for the technical challenge. It was built using only JavaScript, HTML, and CSS, without frameworks. The idea came up because we have bingo cards at home, but we didn't have anything to draw and play with friends. It's a very simple but functional project."
     },
-    "card4":{
+    "project_lc":{
         "title":"LC Vistoria Veicular Webpage",
         "description":"LC Vistoria Veicular is a vehicle inspection company accredited by DETRAN-PE. I developed the page using NextJs and TypeScript, aiming to create a modern and functional online presence for the company. The main idea is to provide useful information for customers."
     }
@@ -65,7 +65,7 @@
       {
         "course": "Internet Systems",
         "institution": "IFPB",
-        "period": "Expected graduation: 08/2026"
+        "period": "Expected graduation: 12/2026"
       },
       {
         "course": "Computer Engineering",
