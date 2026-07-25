@@ -6,7 +6,7 @@ export function WebView({ data }: Readonly<{ data: CvData }>) {
       {/* Header */}
       <div className="border-b pb-8 mb-8 text-center md:text-left">
         <h1 className="text-4xl font-extrabold text-gray-900 uppercase tracking-tight">{data.header.name}</h1>
-        <p className="text-xl text-blue-600 font-medium mt-2">{data.header.role}</p>
+        <p className="text-xl text-blue-600 font-medium mt-2">{data.header.role} | {data.header.cnpj}</p>
         <div className="mt-4 flex flex-wrap justify-center md:justify-start gap-4 text-sm text-gray-600">
           <span>{data.header.email}</span>
           <span>{data.header.location}</span>

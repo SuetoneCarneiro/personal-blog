@@ -68,7 +68,7 @@ export async function Footer({lang}: Readonly<{lang: string}>) {
         {/* Section 3: Copyright & Credits */}
         <div className="flex flex-col items-center justify-between text-sm text-muted-foreground md:flex-row">
           <p>
-            &copy; {currentYear} Suetone Carneiro. All rights reserved.
+            &copy; {currentYear} Suetone Carneiro - 67.547.235/0001-79. All rights reserved.
           </p>
           <div className="mt-4 flex items-center gap-1 md:mt-0">
             <span>Developed with</span>

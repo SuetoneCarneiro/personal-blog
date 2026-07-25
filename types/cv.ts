@@ -2,6 +2,7 @@ export interface CvData {
   header: {
     name: string;
     role: string;
+    cnpj: string;
     email: string;
     phone: string;
     location: string;
