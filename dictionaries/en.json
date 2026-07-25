@@ -41,6 +41,7 @@
     "header": {
       "name": "Suetone Carneiro",
       "role": "Software Developer",
+      "cnpj": "67.547.235/0001-79",
       "email": "suetoneneto12@gmail.com",
       "phone": "+55 (83) 9 8725-2017",
       "location": "Brazil",
@@ -74,7 +75,7 @@
       }
     ],
     "skills": [
-      "Python", "Git and Github", "Django", "Java Spring Boot", "NextJs and TypeScript", "PostgreSQL"
+      "Python", "TypeScript", "Java", "Django", "VueJs and NextJs", "Spring Boot", "PostgreSQL", "Git and Github", "Cursor AI, Claude Code"
     ],
     "languages": [
       { "name": "Portuguese", "level": "Native speaker" },
@@ -83,43 +84,54 @@
     ],
     "experience": [
       {
+        "role": "Quality Analyst & AI Trainer",
+        "company": "Outlier AI",
+        "period": "April/2026 - Present",
+        "description": "I work on training models of Artificial Intelligence agents, such as personal assistants and software agents."
+      },
+      {
         "role": "Computer Engineering Exchange",
         "company": "Mondragon University, Spain",
         "period": "September/2025 - February/2026",
-        "description": "I studied a whole semester in Spain. There, I took courses on Software Engineering, Artificial Intelligence, Project Management, and Data Analysis. I also worked in group and developed a project on facial recognition using Convolutional Neural Networks to medical applications."
+        "description": "Semester abroad studying Software Engineering, AI, Project Management, and Data Analysis. Developed a CNN-based facial recognition project for medical applications."
       },
       {
         "role": "Software Developer Intern",
         "company": "IFPB Innovation Hub",
         "period": "May/2025 - August/2025",
-        "description": "I worked as a VueJs developer, constructing new features and refactoring, cooperating with the development team to create new features. Dealing with TypeScript, VueJs, GitLab, and Vitest for automated tests."
+        "description": "VueJs developer building features and refactoring. Stack: TypeScript, VueJs, GitLab, Vitest."
       },
       {
         "role": "Software Developer Intern",
         "company": "Engeselt Softwares",
         "period": "December/2024 - May/2025",
-        "description": "I worked as a Python/Django developer maintaining a management system and cooperating with the development team to create new features. Dealing with Python, JavaScript, Docker, Celery, and Selenium for automated tests."
+        "description": "Python/Django developer maintaining a management system. Stack: Python, JavaScript, Docker, Celery, Selenium."
       },
       {
         "role": "Software Developer",
         "company": "Junior Enterprise Unisigma",
         "period": "2024 - 2025",
-        "description": "Developer at a university project that introduces students to the business world."
+        "description": "Developer at a university junior enterprise simulating real work environments."
       },
       {
-        "role": "Programming Tutor",
+        "role": "Programming Instructor",
         "company": "Public Elementary School",
         "period": "2024",
-        "description": "I worked as a Programming Tutor on the CODE project, a project by the João Pessoa education department to introduce elementary school children to algorithms and programming."
+        "description": "Taught algorithms and programming to elementary school children (CODE project)."
       },
       {
         "role": "Developer at Django Developers Brazil",
         "company": "Django Developers Brazil",
         "period": "2024",
-        "description": "I participated as a developer on the first class of Django Developers Brasil, a project built to simulate a real work environment while learning Django Framework. We worked on a project from sketch to production."
+        "description": "Participated in a hands-on Django project from sketch to production."
       }
     ],
     "extra": [
+      {
+        "title": "Teaching Assistant - System Analysis and Development",
+        "period": "2026",
+        "description": "Teaching assistant for the System Analysis and Development course."
+      },
       {
         "title": "Event Speaker - IFTECH 2025",
         "period": "2025",

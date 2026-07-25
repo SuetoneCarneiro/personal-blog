@@ -41,6 +41,7 @@
     "header": {
       "name": "Suetone Carneiro",
       "role": "Desenvolvedor de Software",
+      "cnpj": "67.547.235/0001-79",
       "email": "suetoneneto12@gmail.com",
       "phone": "+55 (83) 9 8725-2017",
       "location": "Brasil",
@@ -60,7 +61,7 @@
       "email": "Email",
       "location": "Localização"
     },
-    "summary": "Desenvolvedor Fullstack com experiência em Python/Django, TypeScript/NextJs, Java Spring Boot e VueJs. Tenho um grande interesse em aprender na prática e compartilhar conhecimento, especialmente assuntos como arquitetura de software, escalabilidade, desenvolvimento assistido por IA e tópicos relacionados a negócios. Busco uma vaga para aplicar minhas habilidades fullstack, construir APIs escaláveis e contribuir para soluções de software impactantes.",
+    "summary": "Desenvolvedor Fullstack com experiência em Python/Django, TypeScript/VueJs, Java Spring Boot e NextJs. Tenho um grande interesse em aprender na prática e compartilhar conhecimento, especialmente assuntos como arquitetura de software, escalabilidade, desenvolvimento assistido por IA e tópicos relacionados a negócios. Busco uma vaga para aplicar minhas habilidades fullstack, construir APIs escaláveis e contribuir para soluções de software impactantes.",
     "education": [
       {
         "course": "Sistemas para Internet",
@@ -74,7 +75,7 @@
       }
     ],
     "skills": [
-      "Python", "Git and Github", "Django", "Java Spring Boot", "NextJs and TypeScript", "PostgreSQL"
+      "Python", "TypeScript", "Java", "Django", "VueJs e NextJs", "Spring Boot", "PostgreSQL", "Git e Github",  "Cursor AI, Claude Code"
     ],
     "languages": [
       { "name": "Portuguese", "level": "Native speaker" },
@@ -83,45 +84,50 @@
     ],
     "experience": [
       {
+        "role": "Quality Analyst & AI Trainer",
+        "company": "Outlier AI",
+        "period": "Abril/2026 - Atual",
+        "description": "Atuo no treinamento de modelos de agentes de Inteligência Artificial, tais como assistentes pessoais e agentes de software."
+      },
+      {
         "role": "Intercâmbio em Engenharia da Computação",
         "company": "Mondragon University, Espanha",
         "period": "Setembro/2025 - Fevereiro/2026",
-        "description": "Estudei um semestre completo na Espanha. Lá, cursei disciplinas como Engenharia de Software, Inteligência Artificial, Gestão de Projetos e Análise de Dados. Também trabalhei em grupo e desenvolvi um projeto de reconhecimento facial utilizando Redes Neurais Convolucionais para aplicações médicas."
+        "description": "Semestre no exterior cursando Engenharia de Software, IA, Gestão de Projetos e Análise de Dados. Desenvolvi um projeto de reconhecimento facial com CNN para aplicações médicas."
       },
       {
         "role": "Estagiário Desenvolvedor de Software",
-        "company": "IFPB Innovation Hub",
+        "company": "Polo de Inovação do IFPB - Assert",
         "period": "Maio/2025 - Agosto/2025",
-        "description": "Atuei como desenvolvedor VueJs, construindo novas funcionalidades e realizando refatorações, colaborando com a equipe de desenvolvimento. Trabalhei com TypeScript, VueJs, GitLab e Vitest para testes automatizados."
+        "description": "Desenvolvedor VueJs trabalhando na construção e refatoração de funcionalidades. Stack: TypeScript, VueJs, GitLab, Vitest."
       },
       {
         "role": "Estagiário Desenvolvedor de Software",
         "company": "Engeselt Softwares",
         "period": "Dezembro/2024 - Maio/2025",
-        "description": "Atuei como desenvolvedor Python/Django realizando manutenção em um sistema de gestão e colaborando com a equipe no desenvolvimento de novas funcionalidades. Trabalhei com Python, JavaScript, Docker, Celery e Selenium para testes automatizados."
+        "description": "Desenvolvedor Python/Django trabalhando na manutenção de sistema de gestão. Stack: Python, JavaScript, Docker, Celery, Selenium."
       },
       {
-        "role": "Desenvolvedor de Software",
-        "company": "Empresa Júnior Unisigma",
-        "period": "2024 - 2025",
-        "description": "Trabalhei como desenvolvedor em um projeto universitário que introduz os estudantes ao mercado e ao empreendedorismo."
-      },
-      {
-        "role": "Tutor de Programação",
+        "role": "Instrutor de Programação",
         "company": "Escola Pública de Ensino Fundamental",
         "period": "2024",
-        "description": "Atuei como tutor de programação no projeto CODE, iniciativa da Secretaria de Educação de João Pessoa para introduzir crianças do ensino fundamental aos conceitos de algoritmos e programação."
+        "description": "Ensino de algoritmos e programação para crianças do ensino fundamental (projeto CODE)."
       },
       {
         "role": "Desenvolvedor no Django Developers Brazil",
         "company": "Django Developers Brazil",
         "period": "2024",
-        "description": "Participei como desenvolvedor na primeira turma do Django Developers Brasil, projeto criado para simular um ambiente real de trabalho enquanto aprendíamos o framework Django. Trabalhamos em um projeto desde o esboço até a produção."
+        "description": "Participação em projeto Django hands-on do zero à produção."
       }
     ],
     "extra": [
       {
-        "title": "Palestrante - IFTECH 2025",
+        "title": "Monitor - Análise e Desenvolvimento de Sistemas",
+        "period": "2026",
+        "description": "Monitor da disciplina de Análise e Desenvolvimento de Sistemas"
+      },
+      {
+        "title": "Palestrante - IFTECH 2025, minicurso de Testes Unitários",
         "period": "2025",
         "description": "Ministrei um curso introdutório sobre Testes Unitários utilizando Vitest, juntamente com a equipe do Polo de inovação do IFPB."
       },
@@ -131,12 +137,12 @@
         "description": "Monitor da disciplina de Interação Humano-Computador, focada nos princípios de usabilidade e UI/UX."
       },
       {
-        "title": "Palestrante - IFTECH 2024",
+        "title": "Palestrante - IFTECH 2024, minicurso de Git e Github",
         "period": "2024",
         "description": "Ministrei o curso 'Git e Github: guia básico de sobrevivência', oferecido no IFTECH, principal evento anual da unidade de TI do IFPB."
       },
       {
-        "title": "Monitor - Algoritmos",
+        "title": "Monitor - Algoritmos e Programação Estruturada",
         "period": "2024",
         "description": "Monitor da disciplina de algoritmos e programação estruturada utilizando Python."
       },
