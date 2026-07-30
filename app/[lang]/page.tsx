@@ -77,21 +77,22 @@ export default async function Home({ params, }: Readonly<{ params: Promise<{ lan
               btnText={dictionary.projects.learn_more}
             />
 
-            <ProjectCard 
+            <ProjectCard
               title={dictionary.projects.project_geniuslab.title}
               description={dictionary.projects.project_geniuslab.description}
               imageSrc="/img/projects/genius-lab.png"
               projectUrl="https://github.com/SuetoneCarneiro/Genius-Lab-biblioteca"
               btnText={dictionary.projects.learn_more}
             />
+          </div>
 
-            <ProjectCard 
-              title={dictionary.projects.project_bingo.title}
-              description={dictionary.projects.project_bingo.description}
-              imageSrc="/img/projects/bingo.png"
-              projectUrl="https://github.com/SuetoneCarneiro/bingo"
-              btnText={dictionary.projects.learn_more}
-            />
+          <div className="mt-12 text-center">
+            <Link
+              href={`/${lang}/projetos`}
+              className="inline-flex items-center justify-center rounded-lg border border-border bg-card px-8 py-4 text-base font-semibold text-card-foreground transition-all hover:border-primary hover:text-primary hover:shadow-lg"
+            >
+              {dictionary.projects.view_all}
+            </Link>
           </div>
         </div>
       </section>
