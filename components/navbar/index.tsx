@@ -73,7 +73,7 @@ export function Navbar({ dict, lang }: Readonly<NavbarProps>) {
               </Link>
             </li>
             <li>
-              <Link href="#projects" className="text-muted-foreground hover:text-primary font-medium transition-colors" onClick={() => setOpen(false)}>
+              <Link href={`/${lang}/projetos`} className="text-muted-foreground hover:text-primary font-medium transition-colors" onClick={() => setOpen(false)}>
                 {dict.projects}
               </Link>
             </li>

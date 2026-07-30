@@ -46,7 +46,7 @@ export async function Footer({lang}: Readonly<{lang: string}>) {
 
           {/* Section 2: navigation links */}
           <div className="flex flex-wrap justify-center gap-8 font-medium">
-            <Link href="/#projects" className="transition-colors hover:text-foreground">
+            <Link href={`/${lang}/projetos`} className="transition-colors hover:text-foreground">
               {dictionary.nav.projects}
             </Link>
             <Link href={`/${lang}/curriculo`} className="transition-colors hover:text-foreground">

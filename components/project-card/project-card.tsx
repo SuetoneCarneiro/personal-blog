@@ -7,9 +7,10 @@ interface ProjectCardProps {
   readonly imageSrc: string;
   readonly projectUrl: string;
   readonly btnText?: string;
+  readonly tags?: readonly string[];
 }
 
-export function ProjectCard({title, description, imageSrc, projectUrl, btnText}: ProjectCardProps) {
+export function ProjectCard({title, description, imageSrc, projectUrl, btnText, tags}: ProjectCardProps) {
     return(
     <div className="flex flex-col overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
       <div className="relative h-48 w-full overflow-hidden bg-muted">
@@ -28,7 +29,20 @@ export function ProjectCard({title, description, imageSrc, projectUrl, btnText}:
         <p className="mb-6 flex-1 text-muted-foreground">
           {description}
         </p>
-        
+
+        {tags && tags.length > 0 && (
+          <ul className="mb-6 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <li
+                key={tag}
+                className="cursor-default rounded-full border border-border bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground transition-all duration-200 hover:-translate-y-0.5 hover:border-primary hover:bg-primary/10 hover:text-primary hover:shadow-sm"
+              >
+                {tag}
+              </li>
+            ))}
+          </ul>
+        )}
+
         <Link
           href={projectUrl}
           target="_blank"
